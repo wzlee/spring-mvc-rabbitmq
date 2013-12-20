@@ -7,7 +7,7 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 
 	<!-- RabbitMQ -->
-	<rabbit:connection-factory id="connectionFactory" />
+	<rabbit:connection-factory id="connectionFactory" host="119.147.47.114" username="guest" password="guest"/>
 	<rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="cars.messaging.Exchange" routing-key="cars.messages" />
 	<rabbit:admin connection-factory="connectionFactory" />
 
